@@ -31,6 +31,6 @@ with mp_hands.Hands(
     prevTime = currTime
     #cv2.putText(image, f'FPS: {int(fps)}', (20, 70), cv2.FONT_HERSHEY_PLAIN, 3, (0, 196, 255), 2)
     cv2.imshow('MediaPipe Hands', image)
-    if cv2.waitKey(5) & 0xFF == 27:
-      break
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+		break
 cap.release()
